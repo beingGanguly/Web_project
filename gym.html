@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aves Fit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/training-g8d40466a8_1920.jpg');
+            color: whitesmoke;
+            font-family: 'Roboto Mono', monospace;
+            /* background-repeat: no-repeat; */
+        }
+
+        .left {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            /* border: 4px solid rebeccapurple; */
+            display: inline-block;
+        }
+
+        .left img {
+            width: 35px;
+            filter: invert(100%);   
+        }
+
+        .left div {
+            text-align: center;
+            text-decoration: wavy;
+            line-height: 0px;
+        }
+
+        .center {
+            /* border: 4px solid khaki; */
+            display: block;
+            margin: 25px auto;
+            width: 45%;
+        }
+
+        .right {
+            position: absolute;
+            top: 42px;
+            right: 30px;
+            /* border: 4px solid yellowgreen; */
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 20px;
+            position: sticky;
+        }
+
+        .navbar li a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            color: rgb(141, 135, 135);
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 0 6px;
+            padding: 3px 3px;
+            background-color: rgb(26, 16, 16);
+            color: whitesmoke;
+            cursor: pointer;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .btn:hover {
+            background-color: rgb(129, 179, 233);
+        }
+
+        .container {
+            /* border: 2px solid beige; */
+            margin: 20px 700px;
+            padding: 70px;
+            width: 33%;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        .form-grp input {
+            text-align: center;
+            display: block;
+            width: 420px;
+            padding: 2px;
+            border: 2px solid black;
+            margin: 10px auto;
+            border-radius: 15px;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 80px;
+            margin: 25px auto;
+            font-weight: bold;
+        }
+
+        .form-grp textarea {
+            padding: 10px;
+            width: 405px;
+            height: 165px;
+            margin: 10px;
+        }
+
+        body h1 {
+            text-align: center;
+            margin: 40px;
+            text-decoration: underline;
+            color: rgb(129, 179, 233);
+        }
+        .sub:hover{
+            background-color: rgb(129, 179, 233);
+        }
+    </style>
+</head>
+<header class="header">
+    <div class="left">
+        <img src="img/silhouette-gb45f3f202_1280.png" alt="Error">
+        <div>Aves Fitness</div>
+    </div>
+    <div class="center">
+        <ul class="navbar">
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>About</a></li>
+            <li><a href='#'>Classes</a></li>
+            <li><a href='#'>Fitness Pro</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn">
+            Call Us
+        </button>
+        <button class="btn">
+            Email Us
+        </button>
+        <button class="btn">
+            Log Out
+        </button>
+    </div>
+</header>
+
+<body>
+    <h1>Join the BEST GYM in Uttarpara</h1>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="noaction.php">
+            <div class="form-grp">
+                <div>
+                    Name : <input type="text" name="myName">
+                </div>
+                <br>
+                <div>
+                    Contact No. : <input type="number" name="myNum">
+                </div>
+                <br>
+                <div>
+                    Email Id: <input type="email" name="myEmail">
+                </div>
+                <br>
+                <div>
+                    Date : <input type="date" name="myDate">
+                </div>
+                <br>
+                <label for="eligibility"> Are you 18+? </label>
+                <div>
+                    <input type="checkbox" value="myEligibility" checked id="eligibility">
+                </div>
+                <br>
+                <div>
+                    Gender :
+                    Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other <input
+                        type="radio" name="myGender">
+                </div>
+                <br>
+                <div>
+                    Write about your Goal : <br><textarea name="myText" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input class='sub' type="submit" value="Submit">
+                    <input class='sub' type="reset" value="Reset">
+                </div>
+        </form>
+    </div>
+</body>
+</html>
