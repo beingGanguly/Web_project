@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Oswald:wght@500&family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Mono:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+.sidebar{
+    background-color: rgb(0, 195, 195);
+    /* width: 240px; */
+    font-family: 'Roboto Mono', monospace;
+    transition: transform 0.1s ease-in;
+    position: absolute;
+    /* font-style: italic; */
+}
+
+.sidebargo{
+    transform: translate(-240px,0px); 
+    position: absolute;
+}
+
+.sidebar nav{
+    padding: 30px;
+    height: 110vh;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.sidebar nav li a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+    font-weight: bold;
+}
+.main {
+    background: url("background3.jpg");
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 120vh;
+    background-repeat: repeat;
+}
+
+/* .main :left{
+    margin-left: 155px;
+    width: 35px;
+    /* width: 34vw; */
+    /* filter: invert(100%);  */
+
+
+.left img {
+    margin-left: 155px;
+    width: 8vw;
+    filter: invert(100%);
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    background: none;
+    /* background-color: rgb(0, 0, 0); */
+    height: 58vh;
+    width: 70vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 9px;
+}
+
+.hello{
+    /* font-size: 60px; */
+    font-size: 6em;
+    
+}
+
+.name{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.about{
+    font-size: 35px;
+}
+
+.buttons{
+    margin-top: 34px;
+
+}
+
+.buttons button{
+    margin: 0 4px;
+    padding: 9px 9px;
+    border-radius: 25px;
+    color: whitesmoke;
+    background-color: black;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: rgb(129, 179, 233);
+}
+
+
+.devPic img{
+    width: 20vw;
+    height: 45vh;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 100px;
+    width: 32px;
+}
+
+ @media(max-width: 885px) { 
+    .devPic{
+        display: none;
+    }
+}
